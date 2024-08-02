@@ -6,6 +6,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\internController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PresensiController;
+use App\Http\Controllers\StrukturOrganisasiController;
+use App\Http\Controllers\UnitController;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 use PhpParser\Node\Expr\PostDec;
@@ -70,5 +72,11 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/presensi/izin', [PresensiController::class, 'izin']);
         Route::get('/presensi/izin/form', [PresensiController::class, 'buatizin'])->name('intern.absensi-form');
         Route::post('/presensi/izin/form/store', [PresensiController::class, 'storeizin'])->name('intern.absensi-form.store');
+
+        Route::get('/struktur-organisasi', [StrukturOrganisasiController::class, 'index'])->name('intern.struktur-organisasi');
+
+        Route::get('/unit', [UnitController::class, 'index'])->name('intern.unit');
+
+
     });
 });

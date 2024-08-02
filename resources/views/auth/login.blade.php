@@ -38,7 +38,9 @@
                 <img src="{{ asset('assets/img/logo-telkom.png') }}" alt="image" class="form-image">
             </div>
             <div class="section mt-1">
+            
                 <h1>Presensi intern</h1>
+                <div class="section" style="margin-top: 1rem;"></div>
             </div>
             <div class="section mt-1 mb-5">
                 <form action="{{ route('post-login') }}" method="POST">

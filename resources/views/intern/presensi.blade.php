@@ -30,7 +30,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     @endsection
 
-    <div class="row" style="margin-top: 70px">
+    <div class="row" style="margin-top: 680px">
         <div class="col">
             <input type="hidden" id="lokasi" />
             <div class="webcam-capture"></div>
