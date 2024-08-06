@@ -44,7 +44,7 @@
                 Presensi Pulang
             </button>
             @else
-            <button id="takepresensi" class="btn btn-primary btn-block">
+            <button id="takepresensi" class="btn btn-success btn-block">
                 <ion-icon name="camera-outline"></ion-icon>
                 Presensi Kehadiran
             </button>

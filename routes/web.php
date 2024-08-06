@@ -8,9 +8,11 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PresensiController;
 use App\Http\Controllers\StrukturOrganisasiController;
 use App\Http\Controllers\UnitController;
+use App\Http\Controllers\UnitDetailController;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 use PhpParser\Node\Expr\PostDec;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -77,6 +79,7 @@ Route::middleware(['auth'])->group(function () {
 
         Route::get('/unit', [UnitController::class, 'index'])->name('intern.unit');
 
+        Route::get('/show/{name}', [UnitDetailController::class, 'show'])->name('intern.show');
 
     });
 });
